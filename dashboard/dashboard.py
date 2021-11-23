@@ -12,6 +12,7 @@ from assets.colorscales import RdPu, Spectral, Rainbow
 dataFrame = pd.read_csv("../source/clustered.csv")
 
 app = dash.Dash(__name__)
+server = app.server
 
 app.layout = html.Div(id="body", children = [
     html.Div(
