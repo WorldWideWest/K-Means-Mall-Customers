@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import dash
 from dash import dcc
 from dash import html
@@ -154,7 +155,7 @@ def gender_dist(labels:list, age:int, income:int, score:int) -> dict:
 
     layout = go.Layout(
         title = "Age distribution of participants based on Gender, Annual Income, Spending Score",
-        font = {"size": 18, "color": "#fff"},
+        font = {"size": 14, "color": "#fff"},
         xaxis = {"title": "Age distribution", "color": "#fff"},
         yaxis = {"title": "Number of customers", "color": "#fff"},
         showlegend = False,
@@ -199,4 +200,4 @@ def scatter(labels:list) -> dict:
 
 
 if __name__ == "__main__":
-    app.run_server(debug = True)
+    app.run_server(debug = False)
